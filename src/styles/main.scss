@@ -1,0 +1,28 @@
+@use 'variaveis';
+@use 'header';
+@use 'characters';
+@use 'hero';
+@use 'about';
+@use 'questions';
+@use 'trailer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$corDeFundoSecundario;
+}
+
+h1 {
+    font-family: variaveis.$fontTitulo;
+    font-weight: bold;
+    color: #e3dedca6;
+}
+
+p, 
+h5 {
+    color: #e3dedca6;
+}

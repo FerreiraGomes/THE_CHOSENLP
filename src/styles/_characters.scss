@@ -1,0 +1,76 @@
+@use "variaveis";
+
+.characters {
+  background-color: variaveis.$corDeFundoSecundario;
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon, 
+      .carousel-control-next-icon {
+        display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-control-prev-icon, 
+      .carousel-control-next-icon {
+        display: none;
+    }
+  }
+}
+
+  .carousel-item {
+    display: flex;
+    width: 90%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    align-items: center;
+    padding: 0 150px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+
+      @media (max-width: 768px) {
+        width: 150px;
+        padding: 0;;
+        height: 50%;
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      margin-left: 50px;
+      align-items: center;
+      margin-top: 20px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 12px;
+        margin-left: 10px;
+        height: 100px;
+        margin-bottom: 50px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

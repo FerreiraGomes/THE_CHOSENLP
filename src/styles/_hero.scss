@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-color: variaveis.$corDeFundo;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        text-align: none;
+        min-height: 250px;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        text-align: none;
+        min-height: 250px;
+        padding-top: 20px;
+    }
+
+    &__content {
+        margin-top: 80px;
+        width: 100%;;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+
+        @media (max-width: 768px) {
+            padding: 0;
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            padding: 0 50;
+            margin-top: 50px;
+        }
+    
+        &__container {
+            max-width: 620px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        img {
+            max-width: 500px;
+            border-radius: 30%;
+
+            @media (max-width: 768px) {
+                width: 180px;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                width: 250px;
+            }
+            
+        }
+
+        .t-1{
+            font-family: 'Kanit', sans-serif;
+            font-size: 75px;
+            margin-top: 30px;
+            text-transform: uppercase;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                font-size: 40px;
+            }
+        }
+    }
+}

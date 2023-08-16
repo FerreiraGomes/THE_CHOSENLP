@@ -1,0 +1,15 @@
+@use 'variaveis';
+
+#header .nav .nav-link.active {
+    background-color: variaveis.$corDaFonts;;
+    color: variaveis.$corDeFundoSecundario;
+
+}
+
+.navbar {
+    background-color: variaveis.$corDeFundoSecundario;
+}
+
+#header .nav .nav-link{
+    color: variaveis.$corDaFonts;;
+}

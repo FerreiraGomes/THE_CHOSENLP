@@ -1,0 +1,13 @@
+@use "variaveis";
+
+#trailer {
+  background-color: variaveis.$corDeFundo;
+}
+
+.trailer {
+  &__video {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
